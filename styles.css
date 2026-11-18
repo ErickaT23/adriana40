@@ -169,7 +169,7 @@ a {
     position: fixed;
     inset: 0;
     z-index: 100;
-    background: url("images/FT1.png") center / cover no-repeat;
+    background: url("images/FT1.webp") center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,7 +554,7 @@ a {
     content: "";
     position: absolute;
     inset: -4px;
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     transform: scale(1.01);
     z-index: -1;
 }
@@ -764,7 +764,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 }
 
 .countdown-section .countdown-fondo {
-    background-image: url("images/FC.png");
+    background-image: url("images/FC.webp");
     background-position: 82% center;
 }
 
@@ -864,25 +864,25 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 }
 
 #invitado .invitado-fondo {
-    background-image: url("images/FT2.png");
+    background-image: url("images/FT.webp");
 }
 
 #countdown .countdown-fondo {
-    background-image: url("images/FC.png");
+    background-image: url("images/FC.webp");
 }
 
 #agenda {
-    background-image: url("images/FT1.png");
+    background-image: url("images/FT1.webp");
     background-size: cover;
     background-position: center;
 }
 
 .events-fondo {
-    background-image: url("images/FNEGRO.png");
+    background-image: url("images/FP.webp");
 }
 
 .historia-fondo {
-    background-image: url("images/FNEGRO.png");
+    background-image: url("images/FP.webp");
 }
 
 .historia-section,
@@ -932,7 +932,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     width: min(720px, 100%);
     margin: 0 auto;
     padding: clamp(34px, 5.2vw, 56px) clamp(22px, 4.5vw, 44px);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     overflow: hidden;
 }
@@ -953,7 +953,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     width: min(760px, 100%);
     margin: 0 auto;
     padding: clamp(36px, 5.6vw, 62px) clamp(24px, 5vw, 52px);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     overflow: hidden;
 }
@@ -1311,7 +1311,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 .agenda-section {
     padding: clamp(56px, 9vh, 88px) 18px;
     text-align: center;
-    background-image: url("images/FNEGRO.png");
+    background-image: url("images/FP.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1563,7 +1563,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
     display: grid;
     gap: 16px;
     border: 2px solid rgba(200, 173, 98, 0.66);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     padding: clamp(34px, 5.4vw, 56px) clamp(22px, 4.6vw, 46px);
     overflow: hidden;
@@ -1730,7 +1730,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
     margin: 0 auto;
     padding: clamp(34px, 5.4vw, 56px) clamp(22px, 4.6vw, 46px);
     border: 2px solid rgba(200, 173, 98, 0.66);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     overflow: hidden;
     display: grid;
@@ -1754,7 +1754,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
 .section-inner.dresscode-inner,
 .gifts-inner {
     border: 2px solid rgba(200, 173, 98, 0.66);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
 }
 
@@ -1897,7 +1897,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
     width: min(760px, 100%);
     margin: 0 auto;
     border: 2px solid rgba(200, 173, 98, 0.66);
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     padding: clamp(34px, 5.4vw, 56px) clamp(22px, 4.6vw, 46px);
     overflow: hidden;
@@ -2001,7 +2001,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
     z-index: 2;
     width: min(760px, 100%);
     margin: 0 auto;
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     padding: clamp(34px, 5.4vw, 56px) clamp(22px, 4.6vw, 46px);
     overflow: hidden;
@@ -2305,7 +2305,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
 .rsvp-fondo {
     position: absolute;
     inset: 0;
-    background-image: url("images/FNEGRO.png");
+    background-image: url("images/FP.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3118,7 +3118,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 }
 
 .invitado-tarjeta {
-    background: url("images/FP.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3133,7 +3133,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 }
 
 .bendiciones-tarjeta {
-    background: url("images/FP.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3148,7 +3148,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 }
 
 #agenda {
-    background-image: url("images/FP.png");
+    background-image: url("images/FP.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3159,7 +3159,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 }
 
 #agenda .agenda-panel {
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
        border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3213,7 +3213,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 #rsvp-section,
 #frase-final,
 #footer {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3256,14 +3256,14 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 
 /* Replicar estilo Agenda en Events y Wishes */
 #events {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
 
 #events .event-card {
-    background: url("images/FNEGRO.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3284,14 +3284,14 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 }
 
 #wishes-section {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
 
 #wishes-section .wishes-inner {
-    background: url("images/FNEGRO.png") center/cover no-repeat !important;
+    background: url("images/FP.webp") center/cover no-repeat !important;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3316,7 +3316,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 #rsvp-section .rsvp-panel {
     position: relative;
     overflow: hidden;
-    background: url("images/FP.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
@@ -3359,7 +3359,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 
 /* Frase final sin fondo y card a tamaño completo */
 #frase-final {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3393,7 +3393,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
     justify-content: center;
     border: 6px solid transparent;
     border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
-    background: url("images/FP.png") center/cover no-repeat;
+    background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
     padding: 2.1em 1.6em;
 }
@@ -3727,7 +3727,7 @@ body {
 }
 
 #invitado .invitado-fondo {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3737,7 +3737,7 @@ body {
     position: absolute !important;
     inset: 0 !important;
     z-index: 0 !important;
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3751,7 +3751,7 @@ body {
 }
 
 .agenda-section {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3762,7 +3762,7 @@ body {
 }
 
 #events .events-fondo {
-    background: url("images/FP.png") center / cover no-repeat !important;
+    background: url("images/FP.webp") center / cover no-repeat !important;
     filter: blur(1px);
     transform: scale(1.01);
 }
@@ -3778,14 +3778,14 @@ body {
 }
 
 #dresscode {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
 
 #dresscode .dresscode-fondo {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3889,7 +3889,7 @@ body {
 
 #album,
 #album .events-fondo {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3897,7 +3897,7 @@ body {
 
 #playlist,
 #playlist .events-fondo {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3918,7 +3918,7 @@ body {
 
 #wishes-section,
 #wishes-section .wishes-fondo {
-    background-image: url("images/FNEGRO.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3926,7 +3926,7 @@ body {
 
 #rsvp-section,
 #rsvp-section .rsvp-fondo {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3956,7 +3956,7 @@ body {
 
 .names-editorial {
     overflow: hidden;
-    background: url("images/FP.png") center / cover no-repeat !important;
+    background: url("images/FP.webp") center / cover no-repeat !important;
     border-top: 1px solid rgba(201, 168, 76, 0.28);
     border-bottom: 1px solid rgba(201, 168, 76, 0.28);
 }
@@ -3970,7 +3970,7 @@ body {
     content: "" !important;
     position: absolute !important;
     inset: -1px !important;
-    background: url("images/FP.png") center/cover no-repeat !important;
+    background: url("images/FP.webp") center/cover no-repeat !important;
     transform: scale(1.01);
     z-index: 1 !important;
 }
@@ -4144,7 +4144,7 @@ body {
 }
 
 #bendiciones .bendiciones-fondo {
-    background-image: url("images/FT1.png") !important;
+    background-image: url("images/FT1.webp") !important;
 }
 
 #agenda {
@@ -4369,7 +4369,7 @@ body {
 }
 
 #bendiciones .bendiciones-fondo {
-    background-image: url("images/FP.png") !important;
+    background-image: url("images/FP.webp") !important;
 }
 
 #bendiciones .bendiciones-nombre {
@@ -4385,7 +4385,7 @@ body {
 }
 
 #agenda {
-    background-image: url("images/FT3.png") !important;
+    background-image: url("images/FT3.webp") !important;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -4447,7 +4447,7 @@ body {
 }
 
 #bendiciones .bendiciones-fondo {
-    background: url("images/FPP.png") center / cover no-repeat !important;
+    background: url("images/FPP.webp") center / cover no-repeat !important;
     filter: none;
     transform: none;
 }
@@ -4457,7 +4457,7 @@ body {
 }
 
 #events .events-fondo {
-    background-image: url("images/FPR.png") !important;
+    background-image: url("images/FPR.webp") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -4516,7 +4516,7 @@ body {
 }
 
 #dresscode .dresscode-fondo {
-    background-image: url("images/FPP.png") !important;
+    background-image: url("images/FPP.webp") !important;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -4609,7 +4609,7 @@ body {
 }
 
 #album .events-fondo {
-    background: url("images/FT.png") center / cover no-repeat !important;
+    background: url("images/FT.webp") center / cover no-repeat !important;
     transform: scale(1.01);
 }
 
@@ -4675,13 +4675,13 @@ body {
 
 #wishes-section,
 #rsvp-section {
-    background-image: url("images/FC.png") !important;
+    background-image: url("images/FC.webp") !important;
     background-size: cover !important;
     background-position: center !important;
 }
 
 #wishes-section .wishes-fondo {
-    background-image: url("images/FC.png") !important;
+    background-image: url("images/FC.webp") !important;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -4974,7 +4974,7 @@ body {
 }
 
 #frase-final .final-cierre-fondo {
-    background: url("images/FPP.png") center / cover no-repeat !important;
+    background: url("images/FPP.webp") center / cover no-repeat !important;
 }
 
 .portada-boton:hover,
