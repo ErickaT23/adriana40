@@ -397,11 +397,11 @@ const InvitadoApp = {
         textoEl.id = 'texto-lugares';
         textoEl.textContent = menores > 0 ? ' y ' + childText : '';
 
-        lugaresEl.replaceChildren(
-            document.createTextNode(prefix),
-            numeroEl,
-            textoEl
-        );
+        const prefixParts = isEnglish
+            ? [document.createTextNode("We've reserved"), document.createElement('br'), document.createTextNode(' for you ')]
+            : [document.createTextNode(prefix)];
+
+        lugaresEl.replaceChildren(...prefixParts, numeroEl, textoEl);
     },
 
     renderRSVP() {
@@ -1328,7 +1328,17 @@ function applyTranslation(lang) {
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     const key = el.getAttribute('data-i18n');
     if (titleKeysWithSpans.includes(key)) return;
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] !== undefined) {
+      if (key === 'invitado_mensaje' && lang === 'en') {
+        el.replaceChildren(
+          document.createTextNode("We're so happy to"),
+          document.createElement('br'),
+          document.createTextNode(' celebrate with you')
+        );
+      } else {
+        el.textContent = t[key];
+      }
+    }
   });
 
   // Countdown título

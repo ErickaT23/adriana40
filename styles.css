@@ -555,7 +555,6 @@ a {
     position: absolute;
     inset: -4px;
     background: url("images/FNEGRO.png") center/cover no-repeat;
-    filter: blur(1px);
     transform: scale(1.01);
     z-index: -1;
 }
@@ -589,6 +588,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     gap: 18px;
     max-width: 720px;
     margin: 0 auto;
+    margin-top: 150px;
 }
 
 .name-lines {
@@ -3512,8 +3512,8 @@ body {
 .form-group label,
 .invitado-lugares,
 .album-qr-label {
-    color: #F5EDD6 !important;
-    -webkit-text-fill-color: #F5EDD6 !important;
+    color: #da8d98 !important;
+    -webkit-text-fill-color: #da8d98 !important;
     font-family: var(--text) !important;
     font-weight: 300;
 }
@@ -3926,12 +3926,16 @@ body {
     border-bottom: 1px solid rgba(201, 168, 76, 0.28);
 }
 
+#names {
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
 #names::before {
     content: "" !important;
     position: absolute !important;
     inset: -1px !important;
     background: url("images/FP.png") center/cover no-repeat !important;
-    filter: blur(1px);
     transform: scale(1.01);
     z-index: 1 !important;
 }
@@ -3940,6 +3944,42 @@ body {
 #names .names-text {
     position: relative;
     z-index: 2;
+}
+
+.names-ti-img {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: min(100%, 560px);
+    height: auto;
+    object-fit: contain;
+    margin: 18px auto 0;
+}
+
+.names-ti-wrap {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 560px);
+    margin: 0 auto;
+}
+
+.names-ti-wrap .names-ti-img {
+    width: 100%;
+    margin: 0;
+}
+
+#names .names-ti-info {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 78%;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+}
+
+.names-ti-info p {
+    margin: 8px 0;
 }
 
 #countdown::before {
@@ -3962,7 +4002,7 @@ body {
 #wishes-section .wishes-inner,
 #rsvp-section .rsvp-panel,
 #frase-final .frase-card {
-    background: rgba(10, 10, 10, 0.78) !important;
+    background: #fadbd870 !important;
     border: 1px solid rgba(201, 168, 76, 0.76) !important;
     border-image: none !important;
     box-shadow: 0 0 0 8px rgba(201, 168, 76, 0.06), 0 24px 60px rgba(0, 0, 0, 0.5) !important;
@@ -3985,7 +4025,7 @@ body {
 }
 
 #names .invitado-tarjeta {
-    border-color: #6b7228 !important;
+    border-color: #d27c8f !important;
 }
 
 .invitado-decoracion-img {
@@ -4017,6 +4057,7 @@ body {
 
 #names .names-text {
     margin: 18px auto 28px;
+    margin-bottom: -50px;
 }
 
 #names .invitado-tarjeta {
@@ -4153,8 +4194,8 @@ body {
 
 #musica-btn .music-fab-icon-on,
 #musica-btn .music-fab-icon-off {
-    color: #6b7228 !important;
-    -webkit-text-fill-color: #6b7228 !important;
+    color: #fadbd8 !important;
+    -webkit-text-fill-color: #fadbd8 !important;
 }
 
 .countdown-section .countdown-number {
@@ -4188,7 +4229,7 @@ body {
 .event-time,
 .event-lugar,
 .event-direccion {
-    color: #F5EDD6;
+    color: #d0768b;
 }
 
 .section p.event-note {
@@ -4227,14 +4268,30 @@ body {
 }
 
 #names .invitado-mensaje {
-    color: #F5EDD6 !important;
-    -webkit-text-fill-color: #F5EDD6 !important;
+    color: #da8d98 !important;
+    -webkit-text-fill-color: #da8d98 !important;
     font-family: var(--text) !important;
     font-size: 15px !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 1.55;
     text-shadow: none;
+}
+
+#names .names-ti-info .invitado-mensaje,
+#names .names-ti-info .invitado-lugares {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+#names .names-ti-info .invitado-lugares span {
+    display: inline;
+}
+
+#names .names-ti-info .invitado-lugares #texto-lugares {
+    display: inline;
 }
 
 #names .invitado-lugares {
