@@ -1066,7 +1066,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 .section-inner.gifts-inner,
 .section-inner.playlist-inner {
     border: 1px solid var(--line);
-    background: var(--card);
+    background: #fadbd882;
     backdrop-filter: blur(6px);
     border-radius: 0;
     padding: 18px;
@@ -1403,6 +1403,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     justify-content: center;
     font-size: 2.05rem;
     line-height: 1;
+    margin-top: 90px;
 }
 
 .itinerary-icon i {
@@ -1740,6 +1741,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
     display: grid;
     gap: 14px;
     justify-items: center;
+    margin-top: -90px;
 }
 
 .dresscode-gifts-divider {
@@ -3609,6 +3611,26 @@ body {
     -webkit-text-fill-color: transparent !important;
 }
 
+.lang-fab-btn::before,
+.music-fab-btn::before {
+    display: none !important;
+}
+
+.lang-fab-btn:hover,
+.music-fab-btn:hover,
+.lang-fab-btn:focus-visible,
+.music-fab-btn:focus-visible {
+    background: #d89997 !important;
+    background-color: #d89997 !important;
+    border-color: #fadbd8 !important;
+    color: #fff !important;
+    box-shadow: 0 8px 18px rgba(216, 153, 151, 0.32) !important;
+}
+
+#dresscode .dresscode-inner {
+    box-shadow: 0 0 0 7px rgba(250, 219, 216, 0.24), 0 24px 62px rgba(250, 219, 216, 0.34), inset 0 0 0 1px rgba(255, 255, 255, 0.42) !important;
+}
+
 #events .event-card:nth-child(2),
 #bendiciones .bendiciones-tarjeta {
     box-shadow: 0 0 0 8px rgba(250, 219, 216, 0.28), 0 24px 60px rgba(250, 219, 216, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
@@ -4460,9 +4482,10 @@ body {
     min-width: 148px;
     min-height: 34px;
     padding: 8px 14px;
-    border: 1px solid #6b7228 !important;
+    border: 1px solid #fadbd8 !important;
     border-radius: 999px;
-    background: #6b7228 !important;
+    background: #d89997 !important;
+    background-color: #d89997 !important;
     color: #fff !important;
     font-family: var(--text) !important;
     font-size: 10px !important;
@@ -4534,8 +4557,8 @@ body {
 .dresscode-fv-img {
     display: block;
     position: absolute;
-    width: 160px;
-    left: -58px;
+    width: 190px;
+    left: 80px;
     top: -50px;
     height: auto;
     z-index: 3;
@@ -4586,8 +4609,7 @@ body {
 }
 
 #album .events-fondo {
-    background: url("images/FP.png") center / cover no-repeat !important;
-    filter: blur(1px);
+    background: url("images/FT.png") center / cover no-repeat !important;
     transform: scale(1.01);
 }
 
@@ -4635,16 +4657,17 @@ body {
 
 .gift-image-icon img {
     display: block;
-    width: 75px;
-    height: 75px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
 }
 
 #album .btn-album,
 #album .btn-playlist {
-    border: 1px solid #6b7228 !important;
+    border: 1px solid #fadbd8 !important;
     border-radius: 999px;
-    background: #6b7228 !important;
+    background: #d89997 !important;
+    background-color: #d89997 !important;
     color: #fff !important;
     font-family: var(--text) !important;
     font-size: 10px !important;
@@ -4652,7 +4675,13 @@ body {
 
 #wishes-section,
 #rsvp-section {
-    background-image: url("images/FT3.png") !important;
+    background-image: url("images/FC.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#wishes-section .wishes-fondo {
+    background-image: url("images/FC.png") !important;
     background-size: cover !important;
     background-position: center !important;
 }
@@ -4673,15 +4702,16 @@ body {
 .wishes-rsvp-fv-img {
     position: absolute;
     z-index: 10;
-    left: 0;
+    left: 50%;
     bottom: -20px;
-    width: 140px;
+    width: 250px;
     height: auto;
+    transform: translateX(-50%);
     pointer-events: none;
 }
 
 #wishes-section .rsvp-panel {
-    border-color: #6b7228 !important;
+    border-color: #d0768b !important;
 }
 
 #wishes-section {
@@ -4728,9 +4758,10 @@ body {
 #wishes-section .btn-wish-submit,
 #rsvp-section .btn-rsvp,
 #wishes-section .btn-rsvp {
-    border: 1px solid #6b7228 !important;
+    border: 1px solid #fadbd8 !important;
     border-radius: 999px;
-    background: #6b7228 !important;
+    background: #d89997 !important;
+    background-color: #d89997 !important;
     color: #fff !important;
     font-family: var(--text) !important;
     font-size: 10px !important;
@@ -4841,6 +4872,15 @@ body {
 
 #album .album-qr-img {
     object-fit: contain !important;
+    background: #fadbd8 !important;
+    border: 1px solid #d0768b !important;
+}
+
+#album .album-inner {
+    background: #fadbd8eb !important;
+    border: 1px solid #d0768b !important;
+    border-image: none !important;
+    box-shadow: 0 0 0 8px rgba(250, 219, 216, 0.28), 0 24px 60px rgba(250, 219, 216, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
 }
 
 .album-qr-label {
@@ -4854,8 +4894,8 @@ body {
 .wish-field textarea,
 #rsvp-name,
 #guest-count {
-    background: rgba(10, 10, 10, 0.72) !important;
-    border-color: rgba(107, 114, 40, 0.8) !important;
+    background: #d0768b6b !important;
+    border-color: #d0768b !important;
     color: #F5EDD6 !important;
     font-family: var(--sans) !important;
 }
