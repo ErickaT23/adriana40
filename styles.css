@@ -4901,13 +4901,13 @@ body {
 }
 
 .rsvp-radio-option {
-    border-color: rgba(107, 114, 40, 0.8) !important;
-    background: rgba(10, 10, 10, 0.5) !important;
+    border-color: #d0768b !important;
+    background: #fadbd8 !important;
 }
 
 .footer,
 .footer a {
-    color: #6b7228 !important;
+    color: #d0768b !important;
 }
 
 .music-fab-btn,
@@ -4954,4 +4954,59 @@ body {
     background-clip: text !important;
     color: transparent !important;
     -webkit-text-fill-color: transparent !important;
+}
+
+#invitado,
+#bendiciones,
+#events,
+#dresscode,
+#trayectoria-laboral,
+#album,
+#playlist,
+#wishes-section,
+#rsvp-section,
+#frase-final,
+#footer,
+.agenda-section {
+    background-color: #d8999785 !important;
+    background-image: none !important;
+    background-size: 96px 96px, cover !important;
+}
+
+#frase-final .final-cierre-fondo {
+    background: url("images/FPP.png") center / cover no-repeat !important;
+}
+
+.portada-boton:hover,
+.lang-fab-btn:hover,
+.music-fab-btn:hover,
+.btn-calendar:hover,
+.btn-location:hover,
+.btn-album:hover,
+.btn-playlist:hover,
+.btn-dresscode:hover,
+.btn-media-share:hover,
+.btn-rsvp:hover,
+.btn-wish-toggle:hover,
+.btn-wish-submit:hover,
+.btn-gift:hover {
+    background: #d89997 !important;
+    background-color: #d89997 !important;
+    border-color: #fadbd8 !important;
+    color: #fff !important;
+    box-shadow: 0 10px 22px rgba(216, 153, 151, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
+}
+
+.portada-boton:hover::before,
+.btn-calendar:hover::before,
+.btn-location:hover::before,
+.btn-album:hover::before,
+.btn-playlist:hover::before,
+.btn-dresscode:hover::before,
+.btn-media-share:hover::before,
+.btn-rsvp:hover::before,
+.btn-wish-toggle:hover::before,
+.btn-wish-submit:hover::before,
+.btn-gift:hover::before {
+    background: rgba(255, 255, 255, 0.18) !important;
 }
