@@ -4558,10 +4558,11 @@ body {
     display: block;
     position: absolute;
     width: 190px;
-    left: 80px;
+    left: 50%;
     top: -50px;
     height: auto;
     z-index: 3;
+    transform: translateX(-50%);
 }
 
 #dresscode .dresscode-icon {
