@@ -772,17 +772,6 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     background: linear-gradient(to bottom, rgba(24, 11, 18, 0.62) 0%, rgba(24, 11, 18, 0.34) 36%, rgba(255, 248, 250, 0.22) 100%);
 }
 
-.countdown-section .section-inner {
-    width: min(940px, 100%);
-    min-height: calc(90vh - 82px);
-    min-height: calc(90dvh - 82px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: clamp(42px, 9vh, 88px);
-}
-
 .countdown-section .countdown-titulo {
     margin: 0 0 20px;
     text-align: center;
@@ -950,9 +939,9 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 
 .bendiciones-tarjeta {
     position: relative;
-    width: min(760px, 100%);
+    width: min(920px, 100%);
     margin: 0 auto;
-    padding: clamp(36px, 5.6vw, 62px) clamp(24px, 5vw, 52px);
+    padding: clamp(46px, 6.5vw, 76px) clamp(30px, 6vw, 68px);
     background: url("images/FP.webp") center/cover no-repeat;
     box-shadow: 0 20px 38px rgba(69, 33, 42, 0.2);
     overflow: hidden;
@@ -2136,7 +2125,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
 }
 
 .wish-card {
-    background: #6b722852;
+    background: #917c415c;
     border: 1px solid var(--line);
     text-align: left;
     padding: 14px;
@@ -2792,10 +2781,6 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
         padding: 16px 14px 42px;
     }
 
-    .countdown-section .section-inner {
-        padding-top: clamp(28px, 1vh, 46px);
-    }
-
     .countdown-section .countdown-titulo {
         margin-bottom: 16px;
     }
@@ -2852,7 +2837,19 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 
     .bendiciones-tarjeta {
         width: min(760px, 100%);
-        padding: 30px 16px;
+        padding: 100px 16px;
+    }
+
+    .bendiciones-contenido {
+        padding: 0 10px;
+    }
+
+    .bendiciones-contenido .bendiciones-texto {
+        margin-bottom: 28px;
+    }
+
+    .bendiciones-contenido .bendiciones-nombre {
+        margin-top: 28px !important;
     }
 
     .gifts-inner {
@@ -4976,6 +4973,39 @@ body {
 
 #frase-final .final-cierre-fondo {
     background: url("images/FPP.webp") center / cover no-repeat !important;
+}
+
+#bendiciones .bendiciones-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(24px, 4vw, 38px);
+    width: min(680px, 100%);
+    margin: 0 auto;
+}
+
+#bendiciones .bendiciones-texto {
+    max-width: 650px;
+    margin: 0;
+}
+
+#bendiciones .bendiciones-nombre {
+    margin: 0 !important;
+}
+
+#bendiciones .bendiciones-fh-img {
+    position: static;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+}
+
+@media (max-width: 720px) {
+    #bendiciones .bendiciones-contenido {
+        gap: 24px;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {
