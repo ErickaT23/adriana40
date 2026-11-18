@@ -90,7 +90,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior-y: auto;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -4976,6 +4976,37 @@ body {
 
 #frase-final .final-cierre-fondo {
     background: url("images/FPP.webp") center / cover no-repeat !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .dresscode-collage img,
+    #events .event-photo-icon,
+    .gift-image-icon img {
+        transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease;
+    }
+
+    .dresscode-collage img:hover,
+    #events .event-photo-icon:hover,
+    .gift-image-icon img:hover {
+        transform: translateY(-4px) scale(1.025);
+        box-shadow: 0 12px 24px rgba(216, 153, 151, 0.3);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html,
+    body {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 .portada-boton:hover,
