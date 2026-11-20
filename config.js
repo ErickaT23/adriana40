@@ -36,14 +36,14 @@ const config = {
             titulo: "Celebración",
             lugar: "Prince Tea House",
             hora: "11:00 AM - 2:00 PM",
-            direccion: "6-39 Prince St, Flushing, NY 11354",
+            direccion: "36-39 Prince St, Flushing, NY 11354",
             ubicacionUrl: "https://maps.app.goo.gl/6adknmzC7To8mFQY8"
         },
         recepcion: {
             titulo: "Celebración",
             lugar: "Prince Tea House",
             hora: "11:00 AM - 2:00 PM",
-            direccion: "6-39 Prince St, Flushing, NY 11354",
+            direccion: "36-39 Prince St, Flushing, NY 11354",
             ubicacionUrl: "https://maps.app.goo.gl/6adknmzC7To8mFQY8"
         }
     },

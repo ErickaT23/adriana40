@@ -1074,49 +1074,31 @@ async function seedEventData(arg1, arg2) {
   const force = Boolean(options.force);
 
   const sampleGuests = {
-    "1": { id: "1", nombre: "Invitado Especial", pases: 2, activo: true }
+    "1": { id: "1", nombre: "Frank and Susana", pases: 2, activo: true },
+    "2": { id: "2", nombre: "Chris and Kaitlyn", pases: 2, activo: true },
+    "3": { id: "3", nombre: "Alex and Maria", pases: 2, activo: true },
+    "4": { id: "4", nombre: "George and Karina", pases: 2, activo: true },
+    "5": { id: "5", nombre: "Simon and Jessy", pases: 2, activo: true },
+    "6": { id: "6", nombre: "Jason and Nicole", pases: 2, activo: true },
+    "7": { id: "7", nombre: "Rosa Rosero", pases: 1, activo: true },
+    "8": { id: "8", nombre: "Tony Lopez", pases: 1, activo: true },
+    "9": { id: "9", nombre: "Jeremy Helsel", pases: 1, activo: true },
+    "10": { id: "10", nombre: "Luis y Lucia Balladares", pases: 2, activo: true },
+    "11": { id: "11", nombre: "Adriana y Sonia", pases: 2, activo: true },
+    "12": { id: "12", nombre: "Javier y Gabby Dominguez", pases: 2, activo: true },
+    "13": { id: "13", nombre: "Xiomara Nunez", pases: 1, activo: true },
+    "14": { id: "14", nombre: "Sonia Rosero", pases: 1, activo: true },
+    "15": { id: "15", nombre: "David Solis", pases: 2, activo: true },
+    "16": { id: "16", nombre: "Manuela", pases: 1, activo: true },
+    "17": { id: "17", nombre: "Andre y Argenis", pases: 2, activo: true },
+    "18": { id: "18", nombre: "Kalliopy Katragis", pases: 1, activo: true },
+    "19": { id: "19", nombre: "Tatiana Carrasco", pases: 1, activo: true },
+    "20": { id: "20", nombre: "Juan y Maria", pases: 2, activo: true },
+    "21": { id: "21", nombre: "Hendry y Paty", pases: 2, activo: true },
+    "22": { id: "22", nombre: "Erin", pases: 1, activo: true },
+    "23": { id: "23", nombre: "Miguel y Sonia", pases: 2, activo: true },
+    "24": { id: "24", nombre: "Liz Manay", pases: 1, activo: true }
   };
-/*
-    "2": { id: "2", nombre: "Adriana Acosta", pases: 1, ninos: 2, activo: true },
-    "3": { id: "3", nombre: "Luis Balladares y Sra.", pases: 2, activo: true },
-    "4": { id: "4", nombre: "Felix Rosero y Familia", pases: 2, ninos: 1, activo: true },
-    "5": { id: "5", nombre: "Miguel Nuñez y Familia", pases: 3, activo: true },
-    "6": { id: "6", nombre: "Ernesto Mendoza y Familia", pases: 4, activo: true },
-    "7": { id: "7", nombre: "Margoth Fiallos", pases: 1, ninos: 1, activo: true },
-    "8": { id: "8", nombre: "Reinaldo Fiallos y Sra.", pases: 2, activo: true },
-    "9": { id: "9", nombre: "Marco Lopez y Familia", pases: 2, ninos: 1, activo: true },
-    "10": { id: "10", nombre: "Mariana Fiallos", pases: 1, activo: true },
-    "11": { id: "11", nombre: "Vinicio Ortiz y Familia", pases: 2, ninos: 2, activo: true },
-    "12": { id: "12", nombre: "Juan Acosta y Familia", pases: 2, ninos: 2, activo: true },
-    "13": { id: "13", nombre: "Alex Acosta y Familia", pases: 2, ninos: 2, activo: true },
-    "14": { id: "14", nombre: "Alex Dinopolus y Sra.", pases: 2, activo: true },
-    "15": { id: "15", nombre: "Dr. Reinoso y Sra.", pases: 2, activo: true },
-    "16": { id: "16", nombre: "Maura Flores", pases: 2, activo: true },
-    "17": { id: "17", nombre: "Candy Sifuentes", pases: 2, activo: true },
-    "18": { id: "18", nombre: "Pascual Hernandez", pases: 2, activo: true },
-    "19": { id: "19", nombre: "Arturo Coyotecatl", pases: 2, activo: true },
-    "20": { id: "20", nombre: "Ana Alvarez", pases: 1, activo: true },
-    "21": { id: "21", nombre: "Francisco Canastuj", pases: 1, activo: true },
-    "22": { id: "22", nombre: "Jose Soto", pases: 2, activo: true },
-    "23": { id: "23", nombre: "Alex Salazar", pases: 2, activo: true },
-    "24": { id: "24", nombre: "Danilo Jordan", pases: 2, activo: true },
-    "25": { id: "25", nombre: "Byron Ulloa y Sra.", pases: 2, activo: true },
-    "26": { id: "26", nombre: "Alfredo Fiallos", pases: 1, activo: true },
-    "27": { id: "27", nombre: "Edwin Fiallos", pases: 1, activo: true },
-    "28": { id: "28", nombre: "Jonathan Fiallos", pases: 1, activo: true },
-    "29": { id: "29", nombre: "Nelson Nuñez", pases: 2, activo: true },
-    "30": { id: "30", nombre: "Mario Nuñez", pases: 2, activo: true },
-    "31": { id: "31", nombre: "Guido Nuñez", pases: 2, activo: true },
-    "32": { id: "32", nombre: "Vinicio Galarza", pases: 2, activo: true },
-    "33": { id: "33", nombre: "Freddy Acosta y Sra.", pases: 2, activo: true },
-    "34": { id: "34", nombre: "Ben", pases: 1, activo: true },
-    "35": { id: "35", nombre: "Jeremy", pases: 3, activo: true },
-    "36": { id: "36", nombre: "Juan Ochoa y Sra.", pases: 2, activo: true },
-    "37": { id: "37", nombre: "Bolívar López", pases: 1, activo: true },
-    "38": { id: "38", nombre: "Armando Cocha", pases: 1, activo: true },
-    "39": { id: "39", nombre: "Miguel Farez", pases: 2, activo: true }
-  };
-*/
 
   const [rsvpSnapshot, wishesSnapshot] = await Promise.all([
     get(ref(db, getEventRsvpPath(eventId))),
@@ -1131,7 +1113,7 @@ async function seedEventData(arg1, arg2) {
     await set(ref(db, getEventDeseosPath(eventId)), {});
   }
 
-  // The new event starts with only the demo guest.
+  // Replace the event guest list with the current invitation list.
   await set(ref(db, getEventInvitadosPath(eventId)), {});
 
   await Promise.all(

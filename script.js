@@ -124,7 +124,7 @@ function createSiteConfig(remoteConfig) {
                 titulo: 'Recepción',
                 lugar: 'Prince Tea House',
                 hora: '11:00 AM - 2:00 PM',
-                direccion: '6-39 Prince St, Flushing, NY 11354',
+                direccion: '36-39 Prince St, Flushing, NY 11354',
                 ubicacionUrl: 'https://maps.app.goo.gl/6adknmzC7To8mFQY8',
                 ...(localEvento.recepcion || {}),
                 ...(remoteEvento.recepcion || {})
@@ -286,10 +286,10 @@ function applyFooterConfig() {
 // CONFIGURACIÓN - Editar aquí los invitados
 // ============================================
 const GuestConfig = {
-    invitados: {
-        "1": { nombre: "Invitado Especial", pases: 2, ninos: 0 }
-    },
-    invitadoDefault: { nombre: "Invitado Especial", pases: 2, ninos: 0 },
+    invitados: window.getLocalGuestDirectoryForEvent
+        ? window.getLocalGuestDirectoryForEvent(window.config.event.defaultEventId)
+        : {},
+    invitadoDefault: { nombre: "Invitado", pases: 1, ninos: 0 },
     paramId: 'id'
 };
 

@@ -72,6 +72,10 @@ function normalizeGuestId(value) {
     return safeValue || "default";
 }
 
+function isModelGuestId(value) {
+    return /^(invitado-00[12])$/i.test(String(value || "").trim());
+}
+
 function normalizeResponse(response) {
     const safeResponse = String(response || "").trim().toLowerCase();
     if (safeResponse === "si") return "si";
@@ -96,11 +100,13 @@ function normalizeConfirmation(record) {
 function buildRows(confirmations, guestDirectory) {
     const localGuestDirectory = guestDirectory || {};
     const rows = [];
-    const configuredIds = Object.keys(localGuestDirectory);
+    const configuredIds = Object.keys(localGuestDirectory)
+        .filter((id) => !isModelGuestId(id));
     const confirmationById = new Map();
 
     confirmations.forEach((record) => {
         const normalized = normalizeConfirmation(record);
+        if (isModelGuestId(normalized.id)) return;
         confirmationById.set(normalized.id, normalized);
     });
 
